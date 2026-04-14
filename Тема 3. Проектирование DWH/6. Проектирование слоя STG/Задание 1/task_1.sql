@@ -1,3 +1,13 @@
+-- Вставка таблиц для загрузки данных в слой STG для проекта DWH по бонусной системе.
+-- Пример таблиц берется из de-public yandex-cloud
+-- Конфигурация подключения к базе данных:
+-- "host": "localhost",
+-- "user": "jovyan",
+-- "password": "jovyan"
+-- "port": 15432,
+-- "ssl": false,
+-- "database": "de"
+
 CREATE TABLE stg.bonussystem_users (
 	id int4 GENERATED ALWAYS AS IDENTITY( INCREMENT BY 1 MINVALUE 1 MAXVALUE 2147483647 START 1 CACHE 1 NO CYCLE) NOT NULL,
 	order_user_id text NOT NULL,
