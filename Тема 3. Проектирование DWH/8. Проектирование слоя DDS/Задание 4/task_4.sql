@@ -8,3 +8,6 @@ create table if not exists dds.dm_products
     active_from timestamp not null,
     active_to timestamp not null    
 );
+
+alter table dds.dm_products
+    add constraint dm_products_id_key unique (id);
