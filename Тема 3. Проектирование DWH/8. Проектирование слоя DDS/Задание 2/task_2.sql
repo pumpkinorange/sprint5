@@ -5,3 +5,6 @@ create table if not exists dds.dm_users
     user_login varchar not null,
     user_name varchar not null
 );
+
+alter table dds.dm_users
+    add constraint dm_users_id_key unique (id);
