@@ -6,3 +6,6 @@ create table if not exists dds.dm_restaurants
     active_from timestamp not null,
     active_to timestamp not null
 );
+
+alter table dds.dm_restaurants
+    add constraint dm_restaurants_restaurant_id_key unique (restaurant_id);
