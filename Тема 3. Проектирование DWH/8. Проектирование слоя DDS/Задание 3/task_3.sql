@@ -8,4 +8,4 @@ create table if not exists dds.dm_restaurants
 );
 
 alter table dds.dm_restaurants
-    add constraint dm_restaurants_restaurant_id_key unique (restaurant_id);
+    add constraint dm_restaurants_restaurant_id_key unique (id);
